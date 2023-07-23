@@ -1,0 +1,11 @@
+#sec-1{
+    background-image: url(../images/home-f-sec.jpg);
+    background-size: 100% 100%; /* Make the image cover the entire screen */
+    height: 100%;
+    background-size: cover;
+    padding-top: 64px;
+
+}
+
+
+
