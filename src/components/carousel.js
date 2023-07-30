@@ -4,7 +4,7 @@ const Carousel = () => {
   const [currentSet, setCurrentSet] = useState(1);
 
   const data = [
-    { id: 1, title: 'Card 1' },
+    {  id: 1, title: 'Card 1', image: 'image1.jpg', description: 'Some text for Card 1'},
     { id: 2, title: 'Card 2' },
     { id: 3, title: 'Card 3' },
     // Add more cards here as needed
