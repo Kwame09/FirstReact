@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
+import Card from './card'; // Import the Card component
 
 const Carousel = () => {
   const [currentSet, setCurrentSet] = useState(1);
 
   const data = [
-    {  id: 1, title: 'Card 1', image: 'image1.jpg', description: 'Some text for Card 1'},
-    { id: 2, title: 'Card 2' },
-    { id: 3, title: 'Card 3' },
+    { id: 1, title: 'Card 1', image: 'image1.jpg', description: 'Some text for Card 1' },
+    { id: 2, title: 'Card 2', image: 'image2.jpg', description: 'Some text for Card 2' },
+    { id: 3, title: 'Card 3', image: 'image3.jpg', description: 'Some text for Card 3' },
+    { id: 1, title: 'Card 1', image: 'image1.jpg', description: 'Some text for Card 1' },
+    { id: 2, title: 'Card 2', image: 'image2.jpg', description: 'Some text for Card 2' },
+    { id: 3, title: 'Card 3', image: 'image3.jpg', description: 'Some text for Card 3' },
+    { id: 1, title: 'Card 1', image: 'image1.jpg', description: 'Some text for Card 1' },
+    { id: 2, title: 'Card 2', image: 'image2.jpg', description: 'Some text for Card 2' },
+    { id: 3, title: 'Card 3', image: 'image3.jpg', description: 'Some text for Card 3' },
+    { id: 1, title: 'Card 1', image: 'image1.jpg', description: 'Some text for Card 1' },
+    { id: 2, title: 'Card 2', image: 'image2.jpg', description: 'Some text for Card 2' },
+    { id: 3, title: 'Card 3', image: 'image3.jpg', description: 'Some text for Card 3' },
     // Add more cards here as needed
   ];
 
@@ -25,9 +35,7 @@ const Carousel = () => {
     <div className="flex flex-col items-center">
       <div className="flex space-x-4">
         {sets[currentSet - 1].map((card) => (
-          <div key={card.id} className="bg-gray-300 rounded p-4">
-            <h3>{card.title}</h3>
-          </div>
+          <Card key={card.id} title={card.title} image={card.image} description={card.description} />
         ))}
       </div>
       <div className="flex space-x-2 mt-4">

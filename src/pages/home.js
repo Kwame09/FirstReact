@@ -1,7 +1,7 @@
 import React, {useState } from 'react';
 import "./AllPages.css";
 import Carousel from '../components/carousel';
-import Card  from '../components/card';
+import Card from '../components/card';
 
 export const HomePage = ()=>{
 
@@ -98,24 +98,67 @@ export const HomePage = ()=>{
 
 
 
-            <section className="bg-white text-black p-4 ">
-                <Carousel/>
+            <section className=" text-gray-100 flex flex-col w-full justify-center items-center bg-gray-200 h-176 ">
+              <div className='flex flex-col justify-center items-center gap-2 mt-20 mb-20'>
+
+                <h1 className='text-gray-800 text-4xl font-bold'>Featured Properties</h1>
+                <p className='text-gray-500'>Handpicked properties by our team</p>
+
+              </div>
+
+              <Carousel/>
             </section>
 
-            <section>
-              <Card/>
-            </section>
+      
 
             <section className="bg-green-500 text-white p-4 w-full">
                 <h1 className='text-3xl font-bold'>Section 3</h1>
             </section>
 
-            <section className="bg-yellow-500 text-white p-4">
-                <h1 className='text-3xl font-bold'>Section 4</h1>
+            <section className="bg-gray-200 w-full flex justify-evenly items-center h-176">
+                <Card/>
+                <Card/>
+                <Card/>
+
             </section>
 
-            <section className="bg-red-500 text-white p-4">
-                <h1 className='text-3xl font-bold'>Section 5</h1>
+
+
+            <section className="flex flex-col w-full">
+                
+                <div className='flex flex-col justify-between pb-7 w-full h-96 mt-9'>
+                  
+                  <div className='flex flex-col justify-center items-center gap-3'>
+                    <h1 className='text-gray-800 text-4xl font-bold'>Our Partners</h1>
+                    <p className='text-gray-500'>We only work with the best companies around the globe</p>
+                  </div>
+
+                  <div className='flex items-center justify-evenly w-full h-52 relative'>
+                    <img className='w-64 h-64' src={process.env.PUBLIC_URL + "/estatelogo1.jpg"} alt="" />
+                    <img className='w-64 h-64' src={process.env.PUBLIC_URL + "/estatelogo2.jpg"} alt="" />
+                    <img className='w-64 h-64' src={process.env.PUBLIC_URL + "/estate3.jpg"} alt="" />
+                    <img className='w-48 h-40' src={process.env.PUBLIC_URL + "/estatelogo4.png"} alt="" />
+                    <img className='w-64 h-64' src={process.env.PUBLIC_URL + "/estatelogo5.jpg"} alt="" />
+
+                    <div className='absolute top-0 left-0 w-full h-full bg-white bg-opacity-40'></div>
+                  </div>
+
+                </div>
+
+                <div className='bg-red-500 flex h-40 w-full  items-center justify-evenly'>
+                  
+                  <div className='text-white '>
+                    <h1 className='font-bold text-4xl'>Become a Real Estate Agent</h1>
+                    <p>We only work the best companies around the globe</p>
+                  </div>
+
+                  <div>
+                    <p className='pl-16 pr-16 pt-4 pb-4 bg-red-400 rounded-lg cursor-grab text-white hover:bg-white hover:text-red-500'>Register </p>
+
+                  </div>
+
+                </div>
+
             </section>
         
         </div>
