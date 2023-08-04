@@ -111,14 +111,215 @@ export const HomePage = ()=>{
 
       
 
-            <section className="bg-green-500 text-white p-4 w-full">
-                <h1 className='text-3xl font-bold'>Section 3</h1>
+            <section className="bg-white pb-5 w-full h-176 flex flex-col justify-end  items-center gap-5">
+
+                <div className='flex flex-col justify-center w-full items-center'>
+
+                  <h1 className='text-gray-800 text-4xl font-bold'>Find Properties in These Cities</h1>
+                  <p className='text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+
+                <div className='flex flex-col w-full justify-center items-center gap-5'>
+
+                  <div className='flex gap-6 w-full justify-center'>
+
+                    <div className='bg-green-500 border h-96 rounded-xl w-3/12 overflow-hidden'>
+                      <img className=' rounded-lg w-full h-full transform transition-transform duration-300 hover:scale-110' src={process.env.PUBLIC_URL + "/secGrid1.jpg"} alt="" />
+                    </div>
+
+                    <div className='bg-black border h-96 rounded-lg w-3/5 overflow-hidden'>
+                      <img className='w-full h-full transform transition-transform duration-300 hover:scale-110' src={process.env.PUBLIC_URL + "/secGrid2.jpg"} alt="" /> 
+                    </div>
+                  </div>
+
+                  <div className='flex  gap-6 w-full justify-center'>
+
+                    <div className='bg-yellow-700 border h-96 rounded-lg w-3/5 overflow-hidden'>
+                      <img className='w-full h-full transform transition-transform duration-300 hover:scale-110' src={process.env.PUBLIC_URL + "/secGrid3.jpg"} alt="" />
+                    </div>
+                    <div className='bg-red-700 h-96 border rounded-lg w-3/12 overflow-hidden'>
+                      <img className='w-full h-full transform transition-transform duration-300 hover:scale-110' src={process.env.PUBLIC_URL + "/secGrid4.jpg"} alt="" />
+                    </div>
+                    
+                    
+                  </div>
+                  
+
+
+                </div>
             </section>
 
-            <section className="bg-gray-200 w-full flex justify-evenly items-center h-176">
-                <Card/>
-                <Card/>
-                <Card/>
+
+            <section className="bg-gray-200 p-4 w-full">
+              <div className='w-full flex flex-col justify-center items-center'>
+                <h1 className='text-gray-800 text-4xl font-bold'>Why Choose US</h1>
+                <p className='text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+              </div>
+
+                
+
+                <div className=" flex flex-col bg-white rounded-xl w-96 h-132 border-2 p-2 mb-11 ">
+                    
+
+                    <div className="flex flex-col p-2 justify-between border h-48">
+                      
+                      <div>
+                        <div className='h-40 w-40 rounded-full bg-red-600 flex justify-center items-center font-3xl'>
+                          <i class="fa-solid fa-house-chimney"></i> 
+                        </div>
+                      </div>
+
+                      <div className='text-black'>
+                        <h1>Trusted By Thousands</h1>
+                        <p>Aliquam dictum elit vitae mauris 
+                          facilisis at dictum urna dignissim donec 
+                          vel lectus vel felis.
+                        </p>
+
+
+                      </div>
+              
+                    </div>
+
+                </div>
+                
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <section className="bg-gray-200 w-full flex flex-col justify-evenly h-172">
+                
+                
+                <div className='flex flex-col justify-center items-center'>
+                  <h1 className='text-gray-800 text-4xl font-bold'>Articles & Tips</h1>
+                  <p className='text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div className='flex justify-evenly w-full'>
+      
+                  <div className=" flex flex-col bg-white rounded-xl w-96 h-132 border-2 p-2 mb-11 ">
+                    <div className="">
+                      <img
+                        src={process.env.PUBLIC_URL + "/sCard1.jpg"}
+                        alt="Card"
+                        className="rounded-xl h-60 w-full"
+                      />
+
+                    </div>
+
+                    <div className="flex flex-col p-2 justify-between border h-64">
+                      <div>
+                        <p className="text-red-500">Business</p>
+                        <p className="text-gray-700 font-bold hover:text-red-500 cursor-grab">5 Essential Steps for Buying everyone Investment</p>
+                      </div>
+
+
+                      <div className="flex flex-col justify-between items-center h-28">
+                        <div className='border border-gray-200 w-full flex '></div>
+
+                        <div className='flex items-center w-full'>
+                    
+                          <img className="h-16 w-16 mr-4 border border-gray-100 shadow-inner rounded-full"  src={process.env.PUBLIC_URL + "/secCard1.jpg"} alt="profile pic" />
+                          
+                          <div className='flex w-full justify-between'>
+                            <p className="text-gray-600 text-sm ">Kwame Appiah</p>
+                            <p className="text-gray-600 text-sm ">2nd August, 2023</p>
+                          </div>
+                          
+
+                        </div>
+
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div className=" flex flex-col bg-white rounded-xl w-96 h-132 border-2 p-2 mb-11 ">
+                    <div className="">
+                      <img
+                        src={process.env.PUBLIC_URL + "/sCard2.jpg"}
+                        alt="Card"
+                        className="rounded-xl h-60 w-full"
+                      />
+
+                    </div>
+
+                    <div className="flex flex-col p-2 justify-between border h-64">
+                      <div>
+                        <p className="text-red-500">Construction</p>
+                        <p className="text-gray-700 font-bold hover:text-red-500 cursor-grab">Bedroom Colors You will Never this Regret</p>
+                      </div>
+
+
+                      <div className="flex flex-col justify-between items-center h-28">
+                        <div className='border border-gray-200 w-full flex '></div>
+
+                        <div className='flex items-center w-full'>
+                    
+                          <img className="h-16 w-16 mr-4 border border-gray-100 shadow-inner rounded-full"  src={process.env.PUBLIC_URL + "/secCard2.jpg"} alt="profile pic" />
+                          
+                          <div className='flex w-full justify-between '>
+                            <p className="text-gray-600 text-sm ">Sarah Mensah</p>
+                            <p className="text-gray-600 text-sm ">2nd August, 2023</p>
+                          </div>
+                          
+
+                        </div>
+
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div className=" flex flex-col bg-white rounded-xl w-96 h-132 border-2 p-2 mb-11 ">
+                    <div className="">
+                      <img
+                        src={process.env.PUBLIC_URL + "/sCard3.jpg"}
+                        alt="Card"
+                        className="rounded-xl h-60 w-full"
+                      />
+
+                    </div>
+
+                    <div className="flex flex-col p-2 justify-between border h-64">
+                      <div>
+                        <p className="text-red-500">Business</p>
+                        <p className="text-gray-700 font-bold hover:text-red-500 cursor-grab">5 Essential Steps for Buying everyone Investment</p>
+                      </div>
+
+
+                      <div className="flex flex-col justify-between items-center h-28">
+                        <div className='border border-gray-200 w-full flex '></div>
+
+                        <div className='flex items-center w-full'>
+                    
+                          <img className="h-16 w-16 mr-4 border border-gray-100 shadow-inner rounded-full"  src={process.env.PUBLIC_URL + "/secCard3.jpg"} alt="profile pic" />
+                          
+                          <div className='flex w-full justify-between'>
+                            <p className="text-gray-600 text-sm ">Salima Muna</p>
+                            <p className="text-gray-600 text-sm ">2nd August, 2023</p>
+                          </div>
+                          
+
+                        </div>
+
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                </div>
 
             </section>
 
