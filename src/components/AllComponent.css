@@ -1,0 +1,14 @@
+
+
+.icon{
+    background-color: rgba(0,0,0,0.5);
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: grab;
+}
+
+
+.icon:hover{
+    background-color: #ef4444;
+}
