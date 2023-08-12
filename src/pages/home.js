@@ -1,6 +1,8 @@
 import React, {useState } from 'react';
 import "./AllPages.css";
 import Carousel from '../components/carousel';
+import { ReactComponent as HighFive } from "../images/high-five.svg";
+
 import Card from '../components/card';
 
 export const HomePage = ()=>{
@@ -163,11 +165,11 @@ export const HomePage = ()=>{
                     
 
                     <div className="flex flex-col p-2 justify-between border h-48">
+
+                     
                       
-                      <div>
-                        <div className='h-40 w-40 rounded-full bg-red-600 flex justify-center items-center font-3xl'>
-                          <i class="fa-solid fa-house-chimney"></i> 
-                        </div>
+                    <div>
+                        
                       </div>
 
                       <div className='text-black'>
